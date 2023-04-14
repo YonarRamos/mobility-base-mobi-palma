@@ -8,11 +8,8 @@ _mysql.schema('mydb');
 _mysql.onConnected(function () {
   return logger.i("Connected to mysql database");
 });
-_mysql.onFailure(function (err) {
-  return logger.e("Unable to connect to mysql database", err);
-});
-_mysql.onC(function (error) {
-  return logs_.i('mysql error:', error);
+_mysql.onFailure(function (error) {
+  return logger.e("Unable to connect to mysql database", error);
 });
 _mysql.initialize();
 module.exports = _mysql;
