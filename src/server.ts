@@ -1,4 +1,4 @@
-const _api = require('nexo-npm-node-api');
+const _api = require('nexo-npm-node-server');
 const _logger = require('nexo-npm-node-logger');
 const _errors = require('nexo-npm-node-errors');
 
